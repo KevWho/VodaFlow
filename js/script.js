@@ -1,3 +1,7 @@
+function calcSavings(val){
+	return 0;
+}
+
 $(document).ready(function(){
 	//Navigation Scroll
 	$('a[href*=\\#]').on('click', function(event){     
@@ -58,5 +62,16 @@ $(document).ready(function(){
 		$('.result').removeClass('hidden');
 	    $('#mailingListForm').addClass('hidden');
 	    $(".mailingListInput").val("");
+	});
+
+
+	//Slider
+	$('#slider').on('change mousemove', function(){
+		$('#slider-text').val($(this).val());
+		calcSavings($(this).val());
+	});
+	$('#slider-text').on('change', function(){
+		$('#slider').val($(this).val());
+		calcSavings($(this).val());
 	});
 });

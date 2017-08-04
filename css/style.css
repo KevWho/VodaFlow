@@ -321,6 +321,52 @@ main .row, footer.row{
 	text-align: center;
 }
 
+#slider, #slider-text{
+	width: 100%;
+	max-width: 100%;
+	outline: 0;
+}
+
+#slider-text{
+    text-align: right;
+    border: 0;
+}
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 100%;
+      -webkit-appearance: none;
+      background-color: #F7F9FF;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: black;
+      box-shadow: -10000px 0 0 10000px rgba(39, 59, 122, .75);
+    }
+
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: rgba(39, 59, 122, .75); 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: #F7F9FF;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: rgba(39, 59, 122, .75); 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: #F7F9FF;
+}
+
+
 /* CollegeHound Shit */
 
 .msg{
