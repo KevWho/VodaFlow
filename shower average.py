@@ -4,7 +4,7 @@ u = 0
 s = 0
 l = 0
 m = 0
-b = 1.3909875
+b = 1.10 #amount of money for the following: 5 minutes at full blast and 2 minutes at 1/3rd flow
 f = 0
 x = 0
 n = 0
@@ -46,7 +46,7 @@ def savingsforall():
     a = (x * n)
     return a
 
-while (True): 
+while (True):
     usershower()
     amountofpeople()
     l = amountoflitersuseduser()
